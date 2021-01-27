@@ -8,69 +8,73 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>B_L Loco</title>
+        <title>B_L Bank</title>
     </head>
-    <body class="p-4 p-md-5">
-
-        <div id="login-area">
-            <h1 class="text-center text-uppercase">Welcome to<br><span class="text-info text-capitalize">B_L Bank</span></h1>
-
-            <div class="submit-area col-md-8 mx-auto mt-5">
-                <h4 class="text-dark">Log in</h4>
+    <body>
+        <div class="p-4 p-md-5">
+            <div id="login-area">
+                <h1 class="text-center text-uppercase">Welcome to<br><span class="text-info text-capitalize">B_L Bank</span></h1>
+    
+                <div class="submit-area col-md-8 mx-auto mt-5">
+                    <h4 class="text-dark">Log in</h4>
+                    <br>
+                    <input type="text" class="form-control" name="" id="owner-name" placeholder="Email">
+                    <br>
+                    <input type="password" class="form-control" name="" id="owner-password" placeholder="Password">
+                    <br>
+                    <button id="login" class="btn col-5 col-md-3 btn-outline-info">Log in</button>
+                </div>
+            </div>
+            <div id="transection-area" class="col-md-10 mx-auto mt-5">
+                <h1 class="text-center px-0">Welcome <span class="text-warning" id="accountowner"></span> to <span class="text-info">B_L Bank</span></h1>
                 <br>
-                <input type="text" class="form-control" name="" id="owner-name" placeholder="Email">
-                <br>
-                <input type="password" class="form-control" name="" id="owner-password" placeholder="Password">
-                <br>
-                <button id="login" class="btn col-5 col-md-3 btn-outline-info">Log in</button>
+                <div class="row mb-3">
+                    <div class="col-11 py-2 col-md-4 mx-auto">
+                        <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 deposite">
+                            <h2>Deposite</h2>
+                            <h5>$ <span id="total-deposite">00</span></h5>
+                        </div>
+                    </div>
+                    <div class="col-11 py-2 col-md-4 mx-auto">
+                        <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 withdraw">
+                            <h2>Withdraw</h2>
+                            <h5>$ <span id="total-withdraw">00</span></h5>
+                        </div>
+                    </div>
+                    <div class="col-11 py-2 col-md-4 mx-auto">
+                        <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 balance">
+                            <h2>Balance</h2>
+                            <h5>$ <span id="total-balance">00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 my-2 mx-auto">
+                        <div class="submit-area">
+                            <h3>Deposite</h3>
+                            <br>
+                            <input type="number" name="" id="deposite-amount" class="form-control" placeholder="$ You want to Deposit">
+                            <br>
+                            <button id="deposite-btn" class="btn-outline-info col-6 col-md-4 btn" type="submit">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 mx-auto">
+                        <div class="submit-area">
+                            <h3>Withdraw</h3>
+                            <br>
+                            <input type="number" name="" id="withdraw-amount" class="form-control" placeholder="$ You want to Withdraw">
+                            <br>
+                            <button id="withdraw-btn" class="btn-outline-info col-6 col-md-4 btn" type="submit">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="transection-area" class="col-md-10 mx-auto mt-5">
-            <h1 class="text-center px-0">Welcome <span class="text-warning" id="accountowner"></span> to <span class="text-info">B_L Bank</span></h1>
-            <br>
-            <div class="row mb-3">
-                <div class="col-11 py-2 col-md-4 mx-auto">
-                    <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 deposite">
-                        <h2>Deposite</h2>
-                        <h5>$ <span id="total-deposite">00</span></h5>
-                    </div>
-                </div>
-                <div class="col-11 py-2 col-md-4 mx-auto">
-                    <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 withdraw">
-                        <h2>Withdraw</h2>
-                        <h5>$ <span id="total-withdraw">00</span></h5>
-                    </div>
-                </div>
-                <div class="col-11 py-2 col-md-4 mx-auto">
-                    <div class="colMargin m-md-2 m-lg-4 p-2 p-md-3 p-lg-3 balance">
-                        <h2>Balance</h2>
-                        <h5>$ <span id="total-balance">00</span></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6 my-2 mx-auto">
-                    <div class="submit-area">
-                        <h3>Deposite</h3>
-                        <br>
-                        <input type="number" name="" id="deposite-amount" class="form-control" placeholder="$ You want to Deposit">
-                        <br>
-                        <button id="deposite-btn" class="btn-outline-info col-6 col-md-4 btn" type="submit">Deposit</button>
-                    </div>
-                </div>
-                <div class="col-md-6 my-2 mx-auto">
-                    <div class="submit-area">
-                        <h3>Withdraw</h3>
-                        <br>
-                        <input type="number" name="" id="withdraw-amount" class="form-control" placeholder="$ You want to Withdraw">
-                        <br>
-                        <button id="withdraw-btn" class="btn-outline-info col-6 col-md-4 btn" type="submit">Withdraw</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
+        <footer>
+            <h4 class="text-light text-center my-0">Created By <a href="https://github.com/Brainless-Loco" class="text-info">Brainless-Loco</a></h4>
+        </footer>
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/all.js"></script>
         <script src="js/bootstrap.min.js"></script>
