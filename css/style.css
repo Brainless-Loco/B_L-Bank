@@ -47,3 +47,10 @@ ul,ol{
 .balance{
     background-image: linear-gradient(to bottom,#f1c40f,#f39c12);
 }
+footer{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0%;
+    background-color: #34495e;
+}
